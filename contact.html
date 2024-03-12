@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edonbeatz - Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-edonbeatz.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper" class="wrapper" >
+        <nav class="containerC nav bg-dark" id="nav">
+            <div class="containerR logoSect">
+                <img src="images/logo-edonbeatz.png" width="80px" alt="Edonbeatz Logo">
+                <div class="containerC">
+                    <h2>EDONBEATZ</h2>
+                    <h4>Music Producer, Mix & Mastering Engineer</h4>
+                </div>
+            </div>
+            <ul class="navbar containerR">
+                <li class="navItem"><a href="index.html" class="navLink">Home</a></li>
+                <li class="navItem"><a href="services.html" class="navLink">Services</a></li>
+                <li class="navItem"><a href="projects.html" class="navLink">Projects</a></li>
+                <li class="navItem"><a href="#" class="navLink linkActive" >Contact</a></li>
+                <li class="navItem"><a href="about.html" class="navLink">About</a></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+        <div class="containeC sect bg-light" id="cont-me">
+            <h3 class="sectTitle">Book a session with me...</h3>
+            <form action="contact_processor.php" method="post" class="containerC">
+                <label for="fullname">Full name*<br>
+                    <input type="text" name="fullname" id="fullname" required >
+                </label>
+                <label for="email">Email*<br>
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label for="telephone">Telephone*<br>
+                    <input type="tel" name="telephone" id="telephone" required>
+                </label>
+                <label for="message">Message*<br>
+                    <textarea name="message" id="message"  rows="10" required></textarea>
+                </label>
+                <input class="btnReadMore" type="submit" value="Send">
+            </form>
+        </div>
+        <footer class="containerC sect bg-dark">
+            <div class="containerR gridCont">
+                <div class="gridItem containerC">
+                    <h2 class="gridItemTitle">About</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                </div>
+                <div class="gridItem containerC">
+                    <h2 class="gridItemTitle">Services</h2>
+                    <ul>
+                        <li><a href="services.html#services-recording">Recording</a></li>
+                        <li><a href="services.html#services-production">Music Production</a></li>
+                        <li><a href="services.html#services-mixing">Mixing</a></li>
+                        <li><a href="services.html#services-mastering">Mastering</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px;">Developer: <a href="https://www.github.com/khobbi" class="contactLink link-in-dark" style="color: #edba78;" target="_blank">Hayford Edoonu</a></p>
+        </footer>
+        <button class="btnUp" onclick="document.location.href='#wrapper'">UP</button>
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+</html>

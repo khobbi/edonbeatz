@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edonbeatz</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-edonbeatz.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper" class="wrapper" >
+        <nav class="containerC nav bg-dark" id="nav">
+            <div class="containerR logoSect">
+                <img src="images/logo-edonbeatz.png" width="80px" alt="Edonbeatz Logo">
+                <div class="containerC">
+                    <h2>EDONBEATZ</h2>
+                    <h4>Music Producer, Mix & Mastering Engineer</h4>
+                </div>
+            </div>
+            <ul class="navbar containerR">
+                <li class="navItem"><a href="#" class="navLink linkActive">Home</a></li>
+                <li class="navItem"><a href="services.html" class="navLink">Services</a></li>
+                <li class="navItem"><a href="projects.html" class="navLink">Projects</a></li>
+                <li class="navItem"><a href="contact.html" class="navLink">Contact</a></li>
+                <li class="navItem"><a href="about.html" class="navLink">About</a></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+        <div class="containeC sect bg-light" id="services">
+            <h3 class="sectTitle">Services</h3>
+            <div class="containerR gridCont">
+                <div class="gridItem containerC">
+                    <img src="images/voice.png" height="100" width="100" alt="" class="gridImg">
+                    <h2 class="gridItemTitle">Recording</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button class="btnProdReadMore btnReadMore" onclick="document.location.href='services.html#services-recording'">Read More</button>
+                </div>
+                <div class="gridItem containerC">
+                    <img src="images/production.png" height="100" width="100" alt="" class="gridImg">
+                    <h2 class="gridItemTitle">Music Production</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button class="btnProdReadMore btnReadMore" onclick="document.location.href='services.html#services-production'">Read More</button>
+                </div>
+                <div class="gridItem containerC">
+                    <img src="images/music.png" height="100" width="100" alt="" class="gridImg">
+                    <h2 class="gridItemTitle">Mixing</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button class="btnProdReadMore btnReadMore" onclick="document.location.href='services.html#services-mixing'">Read More</button>
+                </div>
+                <div class="gridItem containerC">
+                    <img src="images/woofer-icon.png" height="100" width="100" alt="" class="gridImg">
+                    <h2 class="gridItemTitle">Mastering</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button class="btnProdReadMore btnReadMore" onclick="document.location.href='services.html#services-mastering'">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="containeC sect bg-dark" id="projects">
+            <h3 class="sectTitle">Projects</h3>
+            <div class="containerR gridCont">
+                <div class="gridItem containerC">
+                    <div class="containerR gridItemTitleCont">
+                        <h2 class="gridItemTitle">Free Instrumentals</h2>
+                    </div>
+                    <img src="images/audio-melody-music-9-svgrepo-com.svg" height="100" width="100" alt="" class="gridImg">
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button onclick="document.location.href='projects.html#proj-free-inst'" class="btnProdReadMore btnReadMore">Read More</button>
+                </div>
+                <div class="gridItem containerC">
+                    <div class="containerR gridItemTitleCont">
+                        <h2 class="gridItemTitle">Songs</h2>
+                    </div>
+                    <img src="images/music-995-svgrepo-com.svg" height="100" width="100" alt="" class="gridImg">
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button onclick="document.location.href='projects.html#proj-songs'" class="btnProdReadMore btnReadMore">Read More</button>
+                </div>
+                <div class="gridItem containerC">
+                    <div class="containerR gridItemTitleCont">
+                        <h2 class="gridItemTitle">Artistes</h2>
+                    </div>
+                    <img src="images/musician-svgrepo-com.svg" height="100" width="100" alt="" class="gridImg">
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                    <button onclick="document.location.href='projects.html#proj-artistes'" class="btnProdReadMore btnReadMore">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="containeC sect bg-light" id="contact">
+            <h3 class="sectTitle">Check me out on all platforms...</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ipsam commodi laboriosam et quam itaque, voluptates consectetur illum tempora omnis quos aspernatur earum odit veniam. Eius assumenda suscipit cumque similique!</p>
+            <div class="containerR gridCont">
+                <div class="gridItem containerC">
+                    <a href="https://www.soundcloud.com" class="contactLink containerR">
+                        <img src="images/soundcloud-rounded-svgrepo-com.svg" width="32" alt="SoundCloud icon">
+                        SoundCloud
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://www.youtube.com/@edonbeatz" class="contactLink containerR">
+                        <img src="images/youtube-168-svgrepo-com.svg" width="32" alt="">
+                        Youtube
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://www.instagram.com/edonbeatz" class="contactLink containerR">
+                        <img src="images/instagram-rounded-svgrepo-com.svg" width="32" alt="">
+                        Instagram
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://www.facebook.com/edonbeatz" class="contactLink containerR">
+                        <img src="images/social-facebook-svgrepo-com.svg" width="32" alt="">
+                        Facebook
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://www.x.com/@edonbeatz" class="contactLink containerR">
+                        <img src="images/social-twitter-svgrepo-com.svg" width="32" alt="">
+                        X (Twitter)
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://wa.me/233553246379" class="contactLink containerR">
+                        <img src="images/whatsapp-128-svgrepo-com.svg" width="32" alt="">
+                        Whatsapp
+                    </a>
+                </div>
+                <div class="gridItem containerC">
+                    <a href="https://www.tiktok.com/@edonbeatz" class="contactLink containerR">
+                        <img src="images/tiktok-logo-logo-svgrepo-com.svg" width="32" alt="">
+                        Tiktok
+                    </a>
+                </div>
+            </div>
+            <p>Phone: +233 55 324 6379, +233 54 038 8118</p>
+            <p>Email: <a href="mailto:edonbeatz1@gmail.com" class="contactLink">edonbeatz1@gmail.com</a></p>
+        </div>
+        <footer class="containerC sect bg-dark" >
+            <div class="containerR gridCont">
+                <div class="gridItem containerC">
+                    <h2 class="gridItemTitle">About</h2>
+                    <p class="gridItemDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nostrum veniam nulla quaerat. Velit, accusantium laborum. Iste quam sit numquam omnis harum ducimus aliquam odio quod. Explicabo culpa optio tenetur?</p>
+                </div>
+                <div class="gridItem containerC">
+                    <h2 class="gridItemTitle">Services</h2>
+                    <ul>
+                        <li><a href="services.html#services-recording">Recording</a></li>
+                        <li><a href="services.html#services-production">Music Production</a></li>
+                        <li><a href="services.html#services-mixing">Mixing</a></li>
+                        <li><a href="services.html#services-mastering">Mastering</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px;">Developer: <a href="https://www.github.com/khobbi" class="contactLink link-in-dark" style="color: #edba78;" target="_blank">Hayford Edoonu</a></p>
+        </footer>
+        <button class="btnUp" onclick="document.location.href='#wrapper'">UP</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

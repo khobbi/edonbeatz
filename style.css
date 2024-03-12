@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 18px;
+    background-color: #fce3a0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bg-dark{
+    background-color: #192430;
+    background-image: linear-gradient(#192430, #1c2832);
+    color: #edba78;
+}
+.bg-light{
+    background-color: #fce3a0;
+    /* background-image: linear-gradient(#fce3a0, #edba78); */
+    background-image: url("images/wave-7.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: #192430;
+}
+.wrapper{
+    position: relative;
+    height: 100vh;
+}
+.containerR{
+    display: flex;
+    flex-direction: row;
+}
+.containerC{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+    /* background-image: url("images/Blank\ YouTube\ Banner\ Template6.jpg");
+    background-position: top;
+    background-repeat: none;
+    
+    color: #edba78; */
+    /* background-image: linear-gradient(); */
+}
+
+.logoSect div{
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+.logoSect div h4{
+    color: rgba(237, 186, 120,0.7);
+}
+.navbar{
+    background-color: #0b151f;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 18px;
+}
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #edba78;
+    margin: 5px 5px;
+    padding: 10px;
+    border-bottom: 4px solid #0b151f;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: all 0.2s;
+}
+.navItem a:hover{
+    cursor: pointer;
+    color: #fce3a0;
+    border-bottom: 4px solid #fce3a0;
+}
+.navbar li a.linkActive{
+    color: #edba78;
+    border-bottom: 4px solid #edba78;
+}
+.navbar li a.linkActive:hover{
+    color: #fce3a0;
+    border-bottom: 4px solid #fce3a0;
+}
+
+/* Sectioons */
+.sect{
+    padding: 80px 80px;
+
+/* for the fade in effect */
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.sectTitle{
+    font-family: 'Times New Roman', Times, serif;
+    /* text-align: center; */
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.gridCont{
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.gridItem{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 15px;
+}
+.btnReadMore{
+    padding: 10px;
+    color: #fce3a0;
+    background-color: #192430;
+    border: 0px solid #192430;
+    border-radius: 40px;
+}
+.btnReadMore:hover{
+    color: #edba78;
+    background-color: #192430;
+    border: 4px solid #edba78;
+    border-radius: 40px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#projects .gridItem, .gridItemTitleCont{
+    border: 1px solid rgba(237, 186, 120,0.7);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: justify;
+}
+#projects .btnReadMore{
+    border: 1px solid rgba(237, 186, 120,0.7);
+}
+.btnUp{
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    color: #fce3a0;
+    background-color: #192430;
+    border: 2px solid #edba78;
+    border-radius: 50%;
+    position: fixed;
+    left: 90%;
+    bottom: 10px;
+}
+.btnUp:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: #edba78;
+}
+#contact .gridCont{
+    flex-wrap: wrap;
+    margin: 15px 15px;
+}
+.contactLink{
+    text-decoration: none;
+    color: #192430;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.contactLink:hover{
+    font-weight: bold;
+}
+
+/* footer */
+footer .gridCont{
+    gap: 20px;
+}
+footer .gridItem{
+    /* background-color: #fce3a0; */
+    justify-content: start;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    padding: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #edba78;
+}
+footer ul li a:hover{
+    font-weight: bold;
+    color: #fce3a0;
+}
+
+/* Projects */
+.projGridCont{
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 300px;
+    overflow: default;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    justify-content: space-around;
+    align-items: center;
+}
+.projGridItem{
+    width: 25%;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.projGridItem a img{
+    width: 100%;
+    gap: 10px;
+    border-radius: 4px;
+    transition: transform 0.8s;
+}
+.projGridItem:hover img{
+    /* transform: scale(1.1); */
+    transform: rotate(7deg);
+}
+.projGridItem:active img{
+    transform: scale(1.5);
+    /* transform: rotate(7deg); */
+}
+.link-in-dark a{
+    color: #edba78;
+}
+
+/* Contact */
+form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(25, 36, 48, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(25, 36, 48, 0.5);
+    backdrop-filter: blur(10px);
+}
+form input[type="text"], input[type="email"],
+input[type="tel"], textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 0px solid #192430;
+    border-bottom: 2px solid #192430;
+    background-color: rgba(252, 227, 160, 0.5);
+    outline: none;
+    color: #0b151f;
+}
+form input[type="text"]:focus, input[type="email"]:focus,
+input[type="tel"]:focus, textarea:focus{
+    background-color: rgba(237, 186, 120, 0.5);
+}
+textarea{resize: none;}
+input[type="submit"]{
+    align-self: end;
+}
+
+/* TOGGLE BUTTON */
+.toggle-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    /* hide it by default */
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #edba78;
+    margin: 5px auto;
+    transition: 0.3s;
+}
+.toggle-button.active .bar:nth-child(2){
+    opacity: 0;
+}
+.toggle-button.active .bar:nth-child(1),
+.toggle-button.active .bar:nth-child(3){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.toggle-button.active .bar:nth-child(1){
+    transform: rotate(45deg);
+}
+.toggle-button.active .bar:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+/* phones */
+@media screen and (max-width:640px){
+    body{
+        font-size: 16px;
+    }
+    nav img{
+        width: 50px;
+        height: 50px;
+    }
+    .logoSect{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .navbar{
+        margin-top: 10px;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        padding: 18px;
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+    .navbar li{
+        list-style-type: none;
+        text-align: center;
+        height: 35px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: #edba78;
+        margin: 5px 5px 0px 5px;
+        padding: 5px;
+        border-bottom: 4px solid #0b151f;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        transition: all 0.2s;
+    }
+    .toggle-button{
+        display: block;
+    }
+    /* navbar toggling */
+    .navbar{
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+        max-height: 500px;
+    }
+    .sect{
+        padding: 20px 20px;
+    }
+    .sectTitle{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .gridCont{
+        flex-direction: column;
+    }
+    .gridItemDesc{
+        text-align: justify;
+    }
+    .gridItem{
+        margin-bottom: 20px;
+    }
+    #services .gridItem{
+        border-bottom: 1px solid;
+        padding-bottom: 8px;
+    }
+    #contact .gridCont{
+        flex-direction: row;
+        justify-content: start;
+    }
+    .service-img{
+        width: 100%;
+    }
+    .projGridCont{
+        justify-content: start;
+    }
+    .projGridItem{
+        width: 25%;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+    .btnUp{
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        left: 85%;
+        bottom: 10px;
+    }
+
+    #about-me img{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+}
