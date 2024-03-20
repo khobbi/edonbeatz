@@ -266,8 +266,8 @@ input[type="submit"]{
 /* TOGGLE BUTTON */
 .toggle-button{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1em;
+    right: 1em;
     z-index: 1000;
     background: none;
     border: none;
