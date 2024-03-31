@@ -48,7 +48,9 @@ nav{
     color: #edba78; */
     /* background-image: linear-gradient(); */
 }
-
+.me{
+    border-radius: 50%;
+}
 .logoSect div{
     justify-content: center;
     gap: 10px;
@@ -113,7 +115,7 @@ nav{
 .gridItem{
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    /* text-align: center; */
     gap: 15px;
 }
 .btnReadMore{
@@ -136,7 +138,7 @@ nav{
     border: 1px solid rgba(237, 186, 120,0.7);
     border-radius: 4px;
     padding: 10px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 #projects .btnReadMore{
     border: 1px solid rgba(237, 186, 120,0.7);
@@ -306,8 +308,8 @@ input[type="submit"]{
         font-size: 16px;
     }
     nav img{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     .logoSect{
         flex-direction: column;
