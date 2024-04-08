@@ -232,6 +232,10 @@ footer ul li a:hover{
     border-radius: 10px;
     transition: transform 0.8s;
 }
+.projGridItem a iframe{
+    width: 100%;
+    border-radius: 10px;
+}
 .projGridItem:hover img{
     /* transform: scale(1.1); */
     transform: rotate(7deg);
